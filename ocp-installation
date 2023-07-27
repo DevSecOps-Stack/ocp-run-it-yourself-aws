@@ -1,5 +1,13 @@
 Get a domain
 sign up for redhat dev account and make sure you have active subscription
 Create route53 and create a hosted zone with the domain you bought and make sure it is public
-Register a domain name and make sure to update the name spaces in domain provider
+Register a domain name and make sure to update the nameservers in domain provider from aws
+Launch an ec2 instance like t2.micro
+install aws cli on jump server if is it not amazon aws instance
 
+Create a aws user under IAM and add programmtic access policy which is aws cli
+create a group and add the user and assign administrative access to the group
+
+Then access AWS from CLI
+Open commandline and hit
+aws configure
