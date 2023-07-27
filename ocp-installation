@@ -25,3 +25,9 @@ mkdir /root/openshift
 cd /root/openshift
 wget https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/stable/openshift-install-linux.tar.gz
 tar xvf filename
+install openshift client
+wget https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/stable/openshift-client-windows.zip
+tar xvf filename
+make sure to select the client based on the OS
+Once extratected you will get oc and kubectl copy both to /user/bin
+
