@@ -11,3 +11,6 @@ create a group and add the user and assign administrative access to the group
 Then access AWS from CLI
 Open commandline and hit
 aws configure
+
+generate ssh keys
+ssh-keygen -t ed25519 -N '' -f ~/.ssh/id_rsa
