@@ -1,5 +1,4 @@
-
-oc login
+oc login /
 oc logout
 oc login -u cluster-address
 oc project - what project we are currently using
