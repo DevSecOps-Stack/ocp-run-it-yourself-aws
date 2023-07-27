@@ -24,3 +24,4 @@ then create below directory
 mkdir /root/openshift
 cd /root/openshift
 wget https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/stable/openshift-install-linux.tar.gz
+tar xvf filename
