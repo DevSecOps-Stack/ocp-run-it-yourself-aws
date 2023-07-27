@@ -1,0 +1,5 @@
+Get a domain
+sign up for redhat dev account and make sure you have active subscription
+Create route53 and create a hosted zone with the domain you bought and make sure it is public
+Register a domain name and make sure to update the name spaces in domain provider
+
