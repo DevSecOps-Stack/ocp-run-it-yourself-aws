@@ -14,3 +14,13 @@ aws configure
 
 generate ssh keys
 ssh-keygen -t ed25519 -N '' -f ~/.ssh/id_rsa
+
+After generation goto below link
+https://console.redhat.com/openshift/create
+then select run it yourself section and select aws X86_64 then select full control which is User-provisioned infrastructure
+copy below link
+https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/stable/openshift-install-linux.tar.gz
+then create below directory
+mkdir /root/openshift
+cd /root/openshift
+wget https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/stable/openshift-install-linux.tar.gz
