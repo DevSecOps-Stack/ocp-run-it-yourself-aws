@@ -32,9 +32,22 @@ make sure to select the client based on the OS
 Once extratected you will get oc and kubectl copy both to /user/bin
 prepare the installation config
 ./openshift-install create install-config --dir=root/openshift
+./openshift-install create install-config
+
 https://console.redhat.com/openshift
 ls -la root/openshift
+
 ./openshift-install create cluster --dir=root/openshift --log-level=info
 
+for connecting to GUI you will get the details once the cluster has been provisioned
+
+for login to cluster from CLI Use below steps
+goto account name and copy login command
+Your API token is
+sha256~0OPVd-KKvhy2t84il3TqME-4aiD2PmCGSnDjdxKryMY
+Log in with this token
+oc login --token=sha256~0OPVd-KKvhy2t84il3TqME-4aiD2PmCGSnDjdxKryMY --server=https://api.softekh.softekh.com:6443
+Use this token directly against the API
+curl -H "Authorization: Bearer sha256~0OPVd-KKvhy2t84il3TqME-4aiD2PmCGSnDjdxKryMY" "https://api.softekh.softekh.com:6443/apis/user.openshift.io/v1/users/~"
 
 
