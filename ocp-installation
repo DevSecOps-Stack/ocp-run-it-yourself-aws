@@ -30,4 +30,11 @@ wget https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/stable/ope
 tar xvf filename
 make sure to select the client based on the OS
 Once extratected you will get oc and kubectl copy both to /user/bin
+prepare the installation config
+./openshift-install create install-config --dir=root/openshift
+https://console.redhat.com/openshift
+ls -la root/openshift
+./openshift-install create cluster --dir=root/openshift --log-level=info
+
+
 
