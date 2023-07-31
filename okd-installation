@@ -11,3 +11,11 @@ vm config:
     add tag
     nsg rules as per the screenshot
 launch instance by a keypair
+connect the instance and switch to sudo
+execute below commands
+yum -y update
+reboot
+sudo su
+uname -sr
+output fot the above command
+3.10.0-1062;4.2.el7. ×86_64 (or higher)
