@@ -10,3 +10,4 @@ vm config:
     default 10 Gigs of disk
     add tag
     nsg rules as per the screenshot
+launch instance by a keypair
