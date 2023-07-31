@@ -85,6 +85,10 @@ kubectl and oc
 cp oc /user/bin/
 cp kubectl /usr/bin
 
+oc version
+
+oc cluster up --public-hostname=machine public ip
+
 
 
 
