@@ -79,6 +79,14 @@ tools-v3.11.0-0cbc58b-linux-64bit.tar.gz
 
 tar xvf openshift-origin-client-tools*.tar.gz
 
+cd to the untar file and you can find two files
+kubectl and oc
+
+cp oc /user/bin/
+cp kubectl /usr/bin
+
+
+
 
 
 
