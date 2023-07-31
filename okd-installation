@@ -89,6 +89,14 @@ oc version
 
 oc cluster up --public-hostname=machine public ip
 
+oc cluster status
+
+oc create user testuser
+
+oc adm policy add-cluster-role-to-user cluster-admin testuser -rolebinding-name=cluster-admin
+
+
+
 
 
 
