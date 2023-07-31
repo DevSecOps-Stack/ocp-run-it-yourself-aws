@@ -61,5 +61,16 @@ mkdir /etc/containers/
 then follow the above steps and do cat
 cat /etc/containers/registries.conf
 
+systemctl daemon-reload
+systemctl restart docker
+systemctl status docker
+
+-----------------------------
+Install Openshift cluster
+
+
+
+
+
 
 
