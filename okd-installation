@@ -1,11 +1,10 @@
 create Aws account and redhat account.
 deploy the below VM
 go to community AMi and select redhat and search for below machine
-RHEL-7.6_HM_GA-20190128-X86_64-0-Hourly2-GP2 - ami-000db10762d0c4c05
+RHEL comminity edition
 
 vm config: 
     cat etc/redhat-release
-    Red Hat Enterprise Linux release 9.2 (Plow)
     t2.medium
     instance count 1
     default subnet with publicip
@@ -81,8 +80,8 @@ tar xvf openshift-origin-client-tools*.tar.gz
 cd to the untar file and you can find two files
 kubectl and oc
 
-cp oc /user/bin/
-cp kubectl /usr/bin
+sudo cp oc /usr/bin/
+sudo cp kubectl /usr/bin
 
 oc version
 
@@ -93,13 +92,3 @@ oc cluster status
 oc create user testuser
 
 oc adm policy add-cluster-role-to-user cluster-admin testuser -rolebinding-name=cluster-admin
-
-
-
-
-
-
-
-
-
-
