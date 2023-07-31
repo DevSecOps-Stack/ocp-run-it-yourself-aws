@@ -67,6 +67,10 @@ systemctl status docker
 
 -----------------------------
 Install Openshift cluster
+sudo su
+echo "net.ipv4.ip_forward=1" l | sudo tee -a /etc/systemctl.conf
+
+sysctl -p
 
 
 
