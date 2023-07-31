@@ -48,7 +48,18 @@ tee /etc/containers/registries.conf<<EOF
 registries = ["172.30.0/16"]
 EOF
 
+if the above command didnot work edit with vi and copy the contents and save
+vim /etc/containers/registries.conf
+insert mode i
+[registries.insecure]
+registries = ["172.30.0/16"]
+esc
+!wq
 
+if above didnt work create the dir containers
+mkdir /etc/containers/
+then follow the above steps and do cat
+cat /etc/containers/registries.conf
 
 
 
