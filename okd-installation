@@ -25,9 +25,10 @@ username: redhat_username
 password: redhat_password
 subscription-manager regresh
 subscription-manager attach --auto
-
-
-
+yum install -y yum-utils device-mapper-persistent-data lvm2
+yum-config-manager --add-repo https://download.docker.com/centos/docker
+-ce.repo
+subscription-manager repos --enable=rhel-7-server-extras-rpms
 
 
 
