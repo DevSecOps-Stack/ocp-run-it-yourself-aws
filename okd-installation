@@ -4,6 +4,8 @@ go to community AMi and select redhat and search for below machine
 RHEL-7.6_HM_GA-20190128-X86_64-0-Hourly2-GP2 - ami-000db10762d0c4c05
 
 vm config: 
+    cat etc/redhat-release
+    Red Hat Enterprise Linux release 9.2 (Plow)
     t2.medium
     instance count 1
     default subnet with publicip
@@ -23,11 +25,17 @@ output fot the above command
 subscription-manager register
 username: redhat_username
 password: redhat_password
-subscription-manager regresh
+subscription-manager refresh
+
+subscription-manager list --available
 subscription-manager attach --auto
+
+subscription-manager attach --pool=2c94c093896d3e2e01897c488d635425
+subscription-manager list --consumed
+
 yum install -y yum-utils device-mapper-persistent-data lvm2
-yum-config-manager --add-repo https://download.docker.com/centos/docker
--ce.repo
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
 subscription-manager repos --enable=rhel-7-server-extras-rpms
 sudo yum install -y docker-ce docker-ce-cli containerd.io
 systemctl start docker
