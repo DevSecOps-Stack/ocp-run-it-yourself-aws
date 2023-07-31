@@ -13,9 +13,22 @@ vm config:
 launch instance by a keypair
 connect the instance and switch to sudo
 execute below commands
+-------------------------
 yum -y update
 reboot
 sudo su
 uname -sr
 output fot the above command
 3.10.0-1062;4.2.el7. ×86_64 (or higher)
+subscription-manager register
+username: redhat_username
+password: redhat_password
+subscription-manager regresh
+subscription-manager attach --auto
+
+
+
+
+
+
+
