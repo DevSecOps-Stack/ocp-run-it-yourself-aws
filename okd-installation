@@ -1,1 +1,3 @@
-
+create Aws account and redhat account.
+deploy the below VM
+RHEL-7.6_HM_GA-20190128-X86_64-0-Hourly2-GP2 - ami-000db10762d0c4c05
