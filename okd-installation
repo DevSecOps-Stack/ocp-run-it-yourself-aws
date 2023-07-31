@@ -1,3 +1,12 @@
 create Aws account and redhat account.
 deploy the below VM
+go to community AMi and select redhat and search for below machine
 RHEL-7.6_HM_GA-20190128-X86_64-0-Hourly2-GP2 - ami-000db10762d0c4c05
+
+vm config: 
+    t2.medium
+    instance count 1
+    default subnet with publicip
+    default 10 Gigs of disk
+    add tag
+    nsg rules as per the screenshot
