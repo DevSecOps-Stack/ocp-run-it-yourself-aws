@@ -29,6 +29,25 @@ yum install -y yum-utils device-mapper-persistent-data lvm2
 yum-config-manager --add-repo https://download.docker.com/centos/docker
 -ce.repo
 subscription-manager repos --enable=rhel-7-server-extras-rpms
+sudo yum install -y docker-ce docker-ce-cli containerd.io
+systemctl start docker
+systemcrl enable docker
+systemctl status docker
+yum install -y wget
+
+tee /etc/docker/daemon.json<<EOF
+{
+"insecure-registries": [
+"172.30.0.0/16"
+]
+}
+cat /etc/docker/daemon.json
+
+tee /etc/containers/registries.conf<<EOF
+[registries.insecure]
+registries = ["172.30.0/16"]
+EOF
+
 
 
 
