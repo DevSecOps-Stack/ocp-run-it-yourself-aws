@@ -34,10 +34,7 @@ prepare the installation config
 #./openshift-install create install-config --dir=root/openshift
 ./openshift-install create install-config
 
-https://console.redhat.com/openshift
-ls -la root/openshift
-
-./openshift-install create cluster --dir=root/openshift --log-level=info
+./openshift-install create cluster --dir=path-to-config-file --log-level=info
 
 for connecting to GUI you will get the details once the cluster has been provisioned
 
