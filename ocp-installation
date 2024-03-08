@@ -35,7 +35,7 @@ prepare the installation config
 ./openshift-install create install-config
 
 ./openshift-install create cluster --dir=path-to-config-file --log-level=info
-
+./openshift-install create cluster --log-level=info
 for connecting to GUI you will get the details once the cluster has been provisioned
 
 for login to cluster from CLI Use below steps
